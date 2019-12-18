@@ -28,17 +28,10 @@
 
 #nav_search_btn {
   min-width: 20px;
-  height: calc(1.7em + 0.75rem + 2px) !important;
+  height: calc(1.5em + 0.75rem + 2px) !important;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-#nav_search_btn:hover {
-  animation: none;
-  min-width: 20px;
-  height: calc(1.7em + 0.75rem + 2px) !important;
-  padding-left: 15px;
-  padding-right: 15px;
+  background-color: #0650A2;
 }
 
 #search_bar_nav {
