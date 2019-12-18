@@ -10,11 +10,10 @@
   <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
     <%= render partial: 'spree/shared/header' %>
 
-    <div class="container">
-      <div class="row" data-hook>
+    <div class="container-fluid">
+      <div class="row" data-hook style="display: flex; justify-content: center">
         <%= spree_breadcrumbs(@taxon) %>
 
-        <%= render partial: 'spree/shared/sidebar' if content_for? :sidebar %>
 
         <main
           id="content"
@@ -29,3 +28,6 @@
     </div>
   </body>
 </html>
+
+
+<!-- < render partial: 'spree/shared/sidebar' if content_for? :sidebar > -->
