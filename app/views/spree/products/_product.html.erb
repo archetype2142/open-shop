@@ -8,7 +8,7 @@
       <a class="block" href="#">
         <div>
           <h5><%= content_tag(:span, truncate(product.name, length: 50), class: 'info mt-3 d-block', title: product.name) %></h5>
-          <span><%= product.category.name %> </span>
+          <span><%= product&.category&.name %> </span>
         </div>
         <div>
           <!-- <span class="h4 inline-block type--strikethrough">$899</span> -->
