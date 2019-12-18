@@ -20,3 +20,28 @@
   padding-top: 0px;
   border-bottom: 1px solid black;
 }
+
+#form_nav_search {
+  display: flex;
+  justify-content: center;
+}
+
+#nav_search_btn {
+  min-width: 20px;
+  height: calc(1.7em + 0.75rem + 2px) !important;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#nav_search_btn:hover {
+  animation: none;
+  min-width: 20px;
+  height: calc(1.7em + 0.75rem + 2px) !important;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#search_bar_nav {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
