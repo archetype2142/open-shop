@@ -3,7 +3,7 @@
   <div class="product">
     <% cache(taxon.present? ? [I18n.locale, current_currency, taxon, product] : cache_key_for_product(product)) do %>
       <%= link_to url, class: 'd-block text-center' do %>
-        <%= image_tag(product, class: "d-block mx-auto") %>
+        <%= small_image(product, class: "d-block mx-auto") %>
       <% end %>
       <a class="block" href="#">
         <div>
