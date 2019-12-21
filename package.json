@@ -8,6 +8,7 @@
     "@rails/webpacker": "4.2.2",
     "isotope-layout": "^3.0.6",
     "jquery": "^3.4.1",
+    "quagga": "^0.12.1",
     "turbolinks": "^5.2.0"
   },
   "version": "0.1.0",

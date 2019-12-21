@@ -12,7 +12,9 @@ Rails.application.routes.draw do
   Spree::Core::Engine.routes.draw do
     get "/about" => "static#about"
     get "/contact" => "static#contact"
-
+    get "/scanner" => "static#scanner"
+    post "/barcode" => "static#barcode"
   end
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

@@ -15,6 +15,7 @@ Spree.config do |config|
   # config.track_inventory_levels = false
   config.logo = 'logo.png'
   config.admin_interface_logo = 'logo.png'
+  config.always_put_site_name_in_title = false
 end
 
 # Configure Spree Dependencies

@@ -38,3 +38,18 @@
   width: 100px;
   border-radius: 0px;
 }
+
+#barcode-scanner canvas.drawingBuffer, #barcode-scanner video.drawingBuffer {
+  display: none;
+}
+
+#barcode-scanner canvas, #barcode-scanner video {
+  width: 100%;
+  height: auto;
+}
+
+#scanner_container {
+  display: flex;
+  justify-content: center;
+}
+
