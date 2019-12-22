@@ -41,6 +41,13 @@ function load_quagga(){
           $.ajax({
             type: "POST",
             url: 'http://localhost:3000/barcode?barcode=' + code,
+            success: function(data){
+              window.location.replace("http://localhost:3000/products/" + data);
+            },
+            error: function(data) {
+              window.location.replace("http://localhost:3000/scanner/");
+              alert("can't find product");
+            }
           });
         }
       });
