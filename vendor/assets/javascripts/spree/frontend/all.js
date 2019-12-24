@@ -40,13 +40,13 @@ function load_quagga(){
           Quagga.stop();
           $.ajax({
             type: "POST",
-            url: 'http://localhost:3000/barcode?barcode=' + code,
+            url: 'https://forlux.herokuapp.com/barcode?barcode=' + code,
             success: function(data){
-              window.location.replace("http://localhost:3000/products/" + data);
+              window.location.replace("https://forlux.herokuapp.com/products/" + data);
             },
             error: function(data) {
-              window.location.replace("http://localhost:3000/scanner/");
-              alert("can't find product");
+              window.location.replace("https://forlux.herokuapp.com/scanner/");
+              alert("Can't find product, please try again");
             }
           });
         }
