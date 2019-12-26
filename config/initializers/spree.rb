@@ -33,9 +33,9 @@ Spree.config do |config|
     default_url:    "/:class/:id/:style/:basename.:extension",
   }
 
-  attachment_config.each do |key, value|
-    Spree::Image.attachment_definitions[:attachment][key.to_sym] = value
-  end
+  # attachment_config.each do |key, value|
+    # Spree::Image.attachment_definitions[:attachment][key.to_sym] = value
+  # end
 end
 
 # Configure Spree Dependencies
