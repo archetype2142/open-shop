@@ -28,7 +28,7 @@ Rails.application.configure do
     config.cache_store = :null_store
   end
 
-  # Store uploaded files on the local file system (see config/storage.yml for options).
+  # Store uploaded files on the local file system (see config/storage.yml for options).s
   config.active_storage.service = :amazon
 
   # Don't care if the mailer can't send.
