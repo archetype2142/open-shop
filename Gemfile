@@ -25,7 +25,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'spree', '~> 4.0'
 gem 'spree_auth_devise', '~> 4.0'
 gem 'spree_gateway', '~> 3.6'
-require 'aws-sdk-s3'
+gem 'aws-sdk-s3'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
