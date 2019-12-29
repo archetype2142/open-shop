@@ -16,6 +16,7 @@ Spree.config do |config|
   config.logo = 'logo.png'
   config.admin_interface_logo = 'logo.png'
   config.always_put_site_name_in_title = false
+  
   attachment_config = {
     s3_credentials: {
       access_key_id:     ENV['AWS_ACCESS_KEY_ID'],

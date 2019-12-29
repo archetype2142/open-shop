@@ -10,34 +10,17 @@
   <% end %>
 <% end %>
 
-<div class="main-container">
-  <section class="switchable switchable--switch space--xs">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="height-50 imagebg border--round" data-overlay="2">
-            <div class="background-image-holder">
-              <%= image_tag "hero-3.jpg", alt: "background" %>
-            </div>
-            <!-- <div class="pos-vertical-center col-md-6 col-lg-5 pl-5">
-              <h2>Build a premium, responsive digital storefront.</h2>
-              <p class="lead">
-                Stack offers unique styling for selling digital goods, including multiple shop and product layouts &mdash; and all common utility pages.
-              </p>
-            </div> -->
-          </div>
-        </div>
-      </div>
-      <!--end of row-->
-    </div>
-    <!--end of container-->
-  </section>
-  
+<div class="main-container">  
   <section>
     <div class="col-md-12">
+      <li id="search-bar" data-hook style="float: right">      
+        <%= render partial: 'spree/shared/search' %>
+      </li>
       <div class="masonry-filter-container row justify-content-center align-items-center">
       </div>
+
       <div class="masonry__container row">
+
         <% if products.any? %>
           <div id="products" class="row d-flex" data-hook>
               <%= render partial: 'spree/products/product', collection: products, locals: { taxon: @taxon } %>
