@@ -76,4 +76,4 @@ $( document ).ready(function() {
   load_quagga();
 });
 
-// $(document).on('load', load_quagga);
+// $(document).on('load', load_quagga);//= require spree/frontend/spree_i18n
